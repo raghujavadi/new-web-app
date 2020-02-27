@@ -38,7 +38,7 @@ stages{
     
    stage('Maven Deploy'){
      steps{
-        deploy adapters: [tomcat8(credentialsId: 'df3041a4-ed28-4450-bf22-598a73d41810', path: '', url: 'http://DESKTOP-VIBCJCA:9090/')], contextPath: '/simple-web-app', onFailure: false, war: '**/*.war'
+    deploy adapters: [tomcat8(credentialsId: 'b627e3b3-f23c-4d78-b6c9-af16477dabd7', path: '', url: 'http://localhost:8082')], contextPath: 'myweb-1.0.war', war: '**/*.war'
        }
     }
     
